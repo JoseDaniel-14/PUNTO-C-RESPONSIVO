@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column; /* Por defecto en móvil */
+  gap: 10px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.caja {
+  background: lightblue;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* 📱 Tablet (>=768px): las cajas se muestran en 2 columnas */
+@media (min-width: 768px) {
+  .contenedor {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .caja {
+    width: 45%;
+    background: lightgreen;
+  }
+}
+
+/* 💻 Pantalla mediana (>=992px): 3 cajas en una fila */
+@media (min-width: 992px) {
+  .caja {
+    width: 30%;
+    background: lightsalmon;
+  }
+}
+
+/* 🖥️ Pantalla grande (>=1200px): se agrandan las cajas */
+@media (min-width: 1200px) {
+  .caja {
+    width: 25%;
+    background: rgb(148, 128, 240);
+  }
+}
+
+@media (min-width: 768px) {
+  body { background: rgb(238, 144, 144); }
+}
+
+@media (min-width: 992px) {
+  body { background: rgb(240, 128, 203); }
+}
