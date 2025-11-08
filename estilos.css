@@ -9,7 +9,7 @@ body {
 
 .contenedor {
   display: flex;
-  flex-direction: column; /* Por defecto en móvil */
+  flex-direction: column; 
   gap: 10px;
   width: 90%;
   max-width: 1200px;
@@ -21,7 +21,7 @@ body {
   border-radius: 10px;
 }
 
-/* 📱 Tablet (>=768px): las cajas se muestran en 2 columnas */
+
 @media (min-width: 768px) {
   .contenedor {
     flex-direction: row;
@@ -34,7 +34,7 @@ body {
   }
 }
 
-/* 💻 Pantalla mediana (>=992px): 3 cajas en una fila */
+
 @media (min-width: 992px) {
   .caja {
     width: 30%;
@@ -42,7 +42,7 @@ body {
   }
 }
 
-/* 🖥️ Pantalla grande (>=1200px): se agrandan las cajas */
+
 @media (min-width: 1200px) {
   .caja {
     width: 25%;
